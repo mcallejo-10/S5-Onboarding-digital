@@ -8,8 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './escena.component.scss'
 })
 export class EscenaComponent {
-  title = '';
-  descripción = '';
-  img = '';
-  bgcolor = '';
+
 }

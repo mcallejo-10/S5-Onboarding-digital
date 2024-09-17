@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { EscenaComponent } from "../escena/escena.component";
+import { IStep } from "../Interfaces/i-step";
 
 @Component({
   selector: 'app-home',
@@ -8,6 +9,7 @@ import { EscenaComponent } from "../escena/escena.component";
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
+
 export class HomeComponent {
 
 }
