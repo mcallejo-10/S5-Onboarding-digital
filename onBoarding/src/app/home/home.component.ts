@@ -1,6 +1,7 @@
-import { Component, inject } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { EscenaComponent } from "../escena/escena.component";
-import { IStep } from "../Interfaces/i-step";
+import { StepsService } from '../steps.service';
+import { iStep } from "../Interfaces/i-step";
 
 @Component({
   selector: 'app-home',
@@ -10,6 +11,11 @@ import { IStep } from "../Interfaces/i-step";
   styleUrl: './home.component.scss'
 })
 
-export class HomeComponent {
-
+export class HomeComponent implements OnInit {
+  steps: iStep[] = [];
+  constructor(private stepsService: StepsService) {};
+  ngOnInit(): void {
+    this.steps = this.stepsService.getSteps();      
+  }
+ 
 }
