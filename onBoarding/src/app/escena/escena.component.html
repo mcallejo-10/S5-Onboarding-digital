@@ -1,12 +1,19 @@
 
 <div>
+
+    <img class="img" src="meditation.svg" alt="hol">
+</div>
+
+<div class="container container-fluid">
     @for (step of steps; track step.title) {
-        <div>
+        <div class="card">
+            <div class="row ">
+                <img class="img" src="../../assets/time_managment.svg" alt="{{ step.title }}">
+            </div>
             <h3>{{ step.title }}</h3>
             <p>{{ step.description}}</p>
         </div>
         } @empty {
         <li>There are no items.</li>
         }
-
 </div>
