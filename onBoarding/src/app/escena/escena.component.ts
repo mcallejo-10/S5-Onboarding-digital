@@ -11,6 +11,14 @@ import { CommonModule, NgFor } from '@angular/common';
   templateUrl: './escena.component.html',
   styleUrl: './escena.component.scss'
 })
+
+
 export class EscenaComponent {
   @Input() steps!:iStep[]; 
+
+  currentStep: number = 0;
+
+  getCurrentStep() {
+    return this.currentStep;
+  }
 }

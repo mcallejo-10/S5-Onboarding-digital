@@ -1,0 +1,62 @@
+
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+.container{
+    font-family: 'Calibri', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    display: flex; 
+    justify-content: center;  
+    
+}
+
+#step {
+    display: flex;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.265);
+    border-radius: 20px;
+    padding: 0;
+    max-width: 17rem;
+    min-width: none;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: white;
+}
+
+.card-img-top {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 22rem;
+
+}
+.img {
+    width: 15rem;
+    height: 15rem;
+}
+
+.card-body {
+    background-color: white;
+    margin: 0;
+    padding: 2;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.card-title {
+ font-weight: 600;
+}
+
+.card-text {
+    font-weight: 300;
+}
+
+.background-color-blue {
+    background-color: #4da2a9;
+}
+.background-color-grey {
+    background-color: #d3d4d9;
+}
+.background-color-yellow {
+    background-color: #ffd167;
+}
