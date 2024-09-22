@@ -1,6 +1,6 @@
 
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
-
+// @import '../../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 
 .container{
     font-family: 'Calibri', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
@@ -35,6 +35,16 @@
     height: 15rem;
 }
 
+.background-color-blue {
+    background-color: #4da2a9;
+}
+.background-color-grey {
+    background-color: #d3d4d9;
+}
+.background-color-yellow {
+    background-color: #ffd167;
+}
+
 .card-body {
     background-color: white;
     margin: 0;
@@ -51,12 +61,33 @@
     font-weight: 300;
 }
 
-.background-color-blue {
-    background-color: #4da2a9;
+
+.img-btn {
+    width: 2.5rem;
+    height: 2.5rem;
 }
-.background-color-grey {
-    background-color: #d3d4d9;
+.pagination {
+    align-items: center;
 }
-.background-color-yellow {
-    background-color: #ffd167;
+.dot {
+    justify-content: space-between;
+    margin: 0.2rem;
+    border-radius: 50%;
+    background-color: #8b8b8b;
+    width: 0.5rem;
+    height: 0.5rem;
 }
+
+.dash {
+    border-radius: 20%;
+    margin: 0.2rem;
+    background-color: #000000;
+    width: 1.5rem;
+    height: 0.5rem;
+}
+
+
+
+
+
+  
