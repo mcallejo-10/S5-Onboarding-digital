@@ -21,4 +21,12 @@ export class EscenaComponent {
   getCurrentStep() {
     return this.currentStep;
   }
+
+  changeStep(nextOrPrevious: number) {
+    let step = nextOrPrevious === 0
+    ? this.currentStep--
+      : this.currentStep++;
+    console.log(this.currentStep);
+    
+  }
 }

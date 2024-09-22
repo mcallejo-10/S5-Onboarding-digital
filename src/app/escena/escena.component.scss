@@ -6,6 +6,7 @@
     font-family: 'Calibri', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     display: flex; 
     justify-content: center;  
+    padding: 5rem;
     
 }
 
@@ -14,8 +15,9 @@
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.265);
     border-radius: 20px;
     padding: 0;
-    max-width: 17rem;
+    max-width: 15rem;
     min-width: none;
+    max-height: 45rem;
     flex-grow: 1;
     flex-shrink: 1;
     background-color: white;
@@ -27,7 +29,7 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    height: 22rem;
+    height: 20rem;
 
 }
 .img {
@@ -55,10 +57,12 @@
 
 .card-title {
  font-weight: 600;
+ font-size: medium;
 }
 
 .card-text {
     font-weight: 300;
+    font-size: small;
 }
 
 
