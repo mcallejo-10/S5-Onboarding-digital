@@ -1,5 +1,50 @@
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
-// @import '../../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+
+
+@keyframes fadeInNext {
+    from {
+      opacity: 0;
+      transform: translateX(-40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+ 
+  @keyframes fadeInPrevious {
+    from {
+      opacity: 0;
+      transform: translateX(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in-next {
+    animation: fadeInNext 0.5s ease-in-out;
+  }
+  
+  .fade-in-previous {
+    animation: fadeInPrevious 0.5s ease-in-out;
+  }
+
+  .fade-in {
+    animation: fadeIn 0.5s ease-in;
+  }
+
+ 
 
 .container {
     font-family: 'Calibri', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;

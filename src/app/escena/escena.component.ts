@@ -1,6 +1,6 @@
 import { Component, Input, NgModule } from '@angular/core';
 import { iStep } from '../Interfaces/i-step';
-import { CommonModule, NgFor } from '@angular/common';
+import { CommonModule} from '@angular/common';
 
 
 @Component({
@@ -16,17 +16,24 @@ export class EscenaComponent {
   @Input() steps!:iStep[]; 
 
   currentStep: number = 0;
+  animation: string = ''
 
   getCurrentStep() {
     return this.currentStep;
   }
 
   changeStep(nextOrPrevious: number) {
+    this.animation = nextOrPrevious === 0
+    ? 'fade-in-previous'
+    : 'fade-in-next'
     let step = nextOrPrevious === 0
-    ? this.currentStep--
-      : this.currentStep++;    
+    ? this.currentStep-- 
+    : this.currentStep++;    
   }
   goToStep(step: number) {
+    this.animation = 'fade-in'
     this.currentStep = step;
   }
 }
+
+
